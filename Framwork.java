@@ -4,12 +4,16 @@ class Assignment {
 	private Code code;
 	private double grade;
 	private String comment;
-	
+
 	public void upDate() {       // update the comment and grade file of this assignment
 
 	}
 	public void download() {
 		Code code = new Code();
+	}
+	public void unZip() {       // our team start from here, we need to receive code, user information from the unzip group
+				    // ** Interface 1 with unzip team	
+
 	}
 }
 
@@ -53,7 +57,7 @@ class Code {                       //class the store the code and compile it, co
 			System.out.println("The file does not compile");
 		}
 	}
-	public void display() {
+	public void display() {                     //** Interface 3 to plagiarism team.
 		String str = this.getSourceCode();
 		// display the source code.
 	}
@@ -69,8 +73,9 @@ class Code {                       //class the store the code and compile it, co
 		temp = this.getScore();
 		// update the grade file 
 	}
-	public void update() {
+	public void update() {   
 		// update the comments file and grade file.
+		// the graph group use the grade file to read and graph it  ** Interface 2
 	}
 }
 class Interface {                            // interface class for comment and grade
